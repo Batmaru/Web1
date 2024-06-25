@@ -26,5 +26,5 @@ app.get('/registrazione', (req, res) => {
 //FORM ROUTE
 app.get('/gestisciDatiForm', (req, res) => {
     console.log("Mi hai chiesto la pagina di registrazione");
-    res.send("<html><body> Ciao" + nome + "</body></html>");
+    res.send("<html><body> Ciao" + req.query.fname + "</body></html>");
     });
