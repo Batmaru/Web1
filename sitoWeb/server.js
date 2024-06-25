@@ -15,10 +15,4 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('', (req, res) => {
     console.log("Mi hai chiesto la pagina iniziale");
     res.sendFile("index.html", { root: './htdocs' });
-    });ù
-    //PRIMA ROUTE
-    app.get('', (req, res) => {
-    console.log("Mi hai chiesto la pagina iniziale");
-    res.sendFile("index.html", { root: './htdocs' });
     });
-    
