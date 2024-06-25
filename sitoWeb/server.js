@@ -16,3 +16,15 @@ app.get('', (req, res) => {
     console.log("Mi hai chiesto la pagina iniziale");
     res.sendFile("index.html", { root: './htdocs' });
     });
+
+//seconda ROUTE
+app.get('/registrazione', (req, res) => {
+    console.log("Mi hai chiesto la pagina di registrazione");
+    res.sendFile("registrazione.html", { root: './htdocs' });
+    });
+
+//FORM ROUTE
+app.get('/gestisciDatiForm', (req, res) => {
+    console.log("Mi hai chiesto la pagina di registrazione");
+    res.send("<html><body> Ciao" + nome + "</body></html>");
+    });
